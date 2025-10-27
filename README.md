@@ -6,6 +6,8 @@ This repository serves as a personal log of my journey in competitive programmin
 
 The primary goal of this repository is to track my progress and maintain high-quality code. Each solution aims for **optimal time and space complexity** and includes internal documentation to explain the logic and complexity analysis.
 
+https://github.com/petersawm/Leetcode-Solution/blob/main/SQL-LeetCode/Leetcode-Solution.png
+
 ## 🚀 Key Features
 
 * **Multi-Language Solutions:** Implementations in Python, Java, and C++.
