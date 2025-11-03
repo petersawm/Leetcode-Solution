@@ -96,7 +96,9 @@
  *   - The Cancellation Rate is (1 / 2) = 0.50
  */
 
+
 -- SOLUTION 1: Using JOIN and CASE (Recommended)
+
 
 /*
  * Approach: JOIN to filter unbanned users, then calculate rate
@@ -132,7 +134,9 @@ ORDER BY
     t.request_at;
 
 
+
 -- SOLUTION 2: Using Subquery (Alternative)
+
 
 /*
  * Approach: Filter in WHERE clause using subqueries
@@ -157,7 +161,9 @@ ORDER BY
     request_at;
 
 
+
 -- SOLUTION 3: Using CTE (Most Readable)
+
 
 /*
  * Approach: Common Table Expression for clarity
@@ -192,7 +198,9 @@ ORDER BY
     request_at;
 
 
+
 -- SOLUTION 4: Detailed with Comments (Learning)
+
 
 SELECT 
     t.request_at AS Day,
@@ -240,7 +248,9 @@ ORDER BY
     t.request_at;
 
 
+
 -- TEST DATA SETUP
+
 
 -- Create tables
 CREATE TABLE IF NOT EXISTS Trips (
@@ -282,7 +292,9 @@ INSERT INTO Users VALUES
 (13, 'No', 'driver');
 
 
+
 -- VERIFICATION QUERIES
+
 
 -- Check what trips are included per day
 SELECT 
@@ -313,6 +325,7 @@ ORDER BY
 -- Trip 3: client=3(No), driver=12(No), status=completed ✓ INCLUDED
 -- Trip 4: client=4(No), driver=13(No), status=cancelled ✓ INCLUDED
 -- Result: 1 cancelled / 3 total = 0.33
+
 
 
 -- COMMON MISTAKES TO AVOID
